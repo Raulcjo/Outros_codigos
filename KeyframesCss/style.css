@@ -1,0 +1,18 @@
+@keyframes animacao{
+    from {background-color: red;width: 500px;}
+    to {background-color: green;width: 200px;}
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    animation: animacao 5s 10s 2 alternate;
+}
+
