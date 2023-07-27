@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form de Contato de E-mail</title>
+</head>
+
+<body>
+    <section>
+        <h2>Contato</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post"><!--O action usa o endereço de satic form-->
+            <label for="nome">Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" placeholder="Digite seu e-mail" autocomplete="off" required>
+            <label for="message">Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+
+            <input type="hidden" name="accessKey" value="6b6344d7-2cda-4f9e-92f2-c127237c3235"><!--Input que conecta o site static form com o form-->
+            <!--O value é a chave de acesso que eu recebi no e-mail-->
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html"><!--Input que redireciona a pessoa para outra página-->
+        </form>
+    </section>
+</body>
+</html>
