@@ -178,18 +178,22 @@ gameLoop();
 
 document.addEventListener("keydown", ({ key }) => { //Estabelece contato com o teclado 
     
-    if(key == "ArrowRight" && direction != "left"){
-        direction = "right";
-    }
-    if(key == "ArrowLeft" && direction != "right"){
-        direction = "left";
-    }
-    if(key == "ArrowDown" && direction != "up"){
-        direction = "down";
-    }
-    if(key == "ArrowUp" && direction != "down"){
-        direction = "up";
-    }
+    do{
+        if(key == "ArrowRight" && direction != "left"){
+            direction = "right";
+        }
+        if(key == "ArrowLeft" && direction != "right"){
+            direction = "left";
+        }
+        if(key == "ArrowDown" && direction != "up"){
+            direction = "down";
+        }
+        if(key == "ArrowUp" && direction != "down"){
+            direction = "up";
+        }
+    }while(checkCollision() = false)
+
+    
 
 });
 
