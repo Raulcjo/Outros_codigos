@@ -1,0 +1,10 @@
+.elemtento{
+    color: #000; /* c:#0 */
+    position: stick; /* po:strick */
+    margin: 40px; /* m:40px */
+    padding: 40px; /* p:40px */
+    float: left; /* fl: left */
+    display: flex; /* d:flex */
+}
+
+/* c - color, po - postion, m - margin, p - padding, fl - float, d - display*/

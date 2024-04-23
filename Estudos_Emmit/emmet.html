@@ -1,0 +1,232 @@
+<!-- Aula 1 -->
+
+<h1></h1>
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
+<h6></h6>
+
+<p></p>
+<span></span>
+<img src="" alt="">
+<form action=""></form>
+
+<!-- Abreviações do Emment -->
+
+<!-- Aula 2 -->
+<blockquote></blockquote> <!--bq-->
+<blockquote></blockquote>
+<header></header> <!--hdr-->
+<footer></footer> <!--ftr-->
+<button></button> <!--btn-->
+
+<!-- Aula 3 -->
+<div class="text"></div> <!--div.text ou .text-->
+<button class="btn"></button> <!--btn.btn-->
+<p class="texto"></p> <!--p.texto-->
+
+<!-- Aula 4 -->
+<div class="container red-box"></div> <!--.conatiner.red-box-->
+<p class="classe1 classe2 classe3"></p> <!--p.classe1.classe2.classe3-->
+
+<!-- Aula 5 -->
+<div id="id-um"></div> <!--div#id-um-->
+<p id="paragrafo-principal"></p>
+
+<!-- Aula 6 -->
+<div id="div-principal" class="container"></div> <!-- div#div-principal.container -->
+<!-- Geralmente o id vem primeiro do que a classe -->
+
+<!-- Aula 7 -->
+<!-- O Emmet também permite criar tags com texto dentro, usando as {} -->
+<h1>Título</h1> <!--h1{Título}-->
+<p>Esse é um paragráfo</p> <!--p{Esse é um paragráfo}-->
+<div id="fossil" class="dinossauro">T-rex</div> <!-- div#fossil.dinossauro{T-rex} -->
+
+<!-- Aula 8 -->
+<!-- O Emmet permite criar vários elementos de uma só vez, usando o + -->
+<h1></h1> <!-- h1+p+span -->
+<p></p>
+<span></span>
+
+<div class="home"></div> <!-- div.home+p#primeiro-paragrafo{Começa aqui} -->
+<p id="primeiro-paragrafo">Começa aqui</p>
+
+<div></div> <!-- div+div+div -->
+<div></div>
+<div></div>
+
+<!-- Aula 9 -->
+<!-- O Emmet ermite criar uma estrutura aninhada, com > -->
+<div> <!-- div>p{Primeiro} -->
+    <p>Primeiro</p>
+</div>
+
+<nav> <!-- nav>ul>li+li+li -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</nav>
+
+<nav id="navbar"> <!-- nav#navbar>ul.links>li.link{link 1}+li.link{ link 2}+li.link{link 3} -->
+    <ul class="links">
+        <li class="link">link 1</li>
+        <li class="link">link 2</li>
+        <li class="link">link 3</li>
+    </ul>
+</nav>
+
+<p>Texto<span>texto</span></p> <!-- p{Texto}>span{Texto} -->
+
+<!-- Aula 10 -->
+<!-- O Emmit permite multiplicar o mesmo elemento, usando o * -->
+<ul id="lista-principal"> <!-- ul#lista-produto>li.item*5 -->
+    <li class="item"></li>
+    <li class="item"></li>
+    <li class="item"></li>
+    <li class="item"></li>
+    <li class="item"></li>
+</ul>
+
+<div id="container-principal"> <!-- div#container-principal>div.mini-conatiners*3 -->
+    <div class="mini-containers"></div>
+    <div class="mini-containers"></div>
+    <div class="mini-containers"></div>
+</div>
+
+<!-- Aula 11 -->
+<!-- No Emmit quando se quer blocos diferentes, é nescessário encapsular os elementos, usando () -->
+
+<!-- Isso é o que acontece quando não se encapsula em blocos diferentes-->
+<div> <!-- div>ul>li*5+div>p*3>span -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <div>
+            <p><span></span></p>
+            <p><span></span></p>
+            <p><span></span></p>
+        </div>
+    </ul>
+</div>
+
+<!-- Esse é a maneira correta -->
+<div> <!-- (div>ul>li*5)+(div>p*3>span)  -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<div>
+    <p><span></span></p>
+    <p><span></span></p>
+    <p><span></span></p>
+</div>
+
+<div> <!-- (div>h1>p)+(div+p*5) -->
+    <h1>
+        <p></p>
+    </h1>
+</div>
+<div>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+</div>
+
+<!-- Aulas 12 -->
+<!-- No Emmet é possível colocar qualquer tipo de atributos nos elementos, usando [] -->
+<a href="www.google.com.br" target="_blank"></a> <!-- a[href=www.google.com.br target="_blank"] -->
+
+<p id="primeiro" class="class" data="ok">texto</p> <!-- p#primeiro.class[data="ok"]{texto} -->
+
+<!-- Aula 13 -->
+<!-- Criando form para formulários -->
+<form action="search.php" method="get"></form> <!-- form:get[action="search.php"] -->
+
+<!-- Aula 14 -->
+<input type="email" name="" id=""> <!-- input:email -->
+
+<label for="">E-mail</label><input type="email" name="" id=""> <!-- (label{E-mail})+(input:email) -->
+
+<textarea name="" id="" cols="30" rows="10"></textarea> <!-- textarea --> 
+
+<select name="" id="" disabled="disabled"></select> <!-- select:disabled -->
+
+<select name="" id=""> <!-- select>options*5 -->
+    <options></options>
+    <options></options>
+    <options></options>
+    <options></options>
+    <options></options>
+</select>
+
+<!-- Aula 15 -->
+
+<!DOCTYPE html> <!-- ! ou html:5-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!DOCTYPE html> <!--- !!! -->
+
+<!-- Aula 16 -->
+<!-- Gerar lorem, escrever e apertar tab-->
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  <!-- lorem -->
+    Illo suscipit fuga perferendis voluptas ut minima consequuntur 
+    molestiae, praesentium illum tempora autem repellendus, officia 
+    accusantium sapiente libero nostrum error. Asperiores, quidem?
+</p>
+
+<!-- lorem*5 -->
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae odio autem, alias iste ratione nemo. Aut facere odio rerum doloremque necessitatibus! Quibusdam cupiditate error, repellendus aliquid eaque aspernatur excepturi. Corporis?
+Architecto est optio doloremque minus amet aliquid. Mollitia aliquid explicabo velit ipsa obcaecati deleniti accusantium quam dolor, deserunt aut animi, autem optio molestias necessitatibus aliquam blanditiis! Nulla odit molestias incidunt!
+Corporis facere, sapiente aut earum obcaecati vitae harum nam quisquam ut ab pariatur illum? Accusamus quis exercitationem doloribus quam assumenda blanditiis nihil omnis repudiandae tempora harum. Iste corporis suscipit adipisci.
+Est fuga, ipsa at fugiat velit tempora itaque assumenda tenetur sint nihil quas aliquam illo voluptates accusamus? Totam, assumenda neque eum ad est numquam placeat perferendis debitis, odit obcaecati mollitia.
+Nam nostrum non exercitationem saepe. Tempore facilis adipisci magni exercitationem voluptas vero necessitatibus vel. Quos quis magni labore veritatis ducimus nihil atque soluta earum saepe. Modi aliquid cumque laudantium sed?</p>
+
+<!-- Aula 17 -->
+<!-- Lorem em linhas -->
+<ul class="mylist"> <!-- up.mylist>li.item>lorem*5 -->
+    <li class="item">
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto officiis ad cumque error nemo molestias. Quas asperiores fuga unde dolores eos error natus rem eum, dolorem, aperiam maiores expedita recusandae!</div>
+        <div>Qui magnam rem aperiam porro molestiae esse expedita odio ipsam! Eligendi ad magni accusantium impedit aperiam atque inventore nesciunt, quasi hic. Aliquam vitae sit nam, numquam reiciendis magni et enim!</div>
+        <div>Architecto, voluptate! Sapiente voluptas ut, repudiandae ullam quibusdam soluta hic quidem odit cumque. Consequuntur dolores odit blanditiis, deserunt qui ipsa minima quae, explicabo officiis itaque illum sapiente voluptate at facere.</div>
+        <div>Odio illo voluptates, quos error optio molestias? Architecto, dolorem id? Vitae magnam iste, quos eos eveniet ullam mollitia error sunt eum quo suscipit! Illo adipisci quas quisquam corrupti, voluptatem numquam.</div>
+        <div>Architecto amet magnam voluptatem odio. Aut magnam beatae ipsum, debitis similique numquam voluptas necessitatibus quas. Fuga debitis eligendi tenetur est! Fugiat nemo quas vero dolorum. Ut molestiae maiores magnam unde.</div>
+    </li>
+</ul>
+
+<!-- Aula 18 -->
+<!-- Usando o $, ao invés de um número quando se multiplica, ele é alterado e substituido pela contagem da multiplicação -->
+<ul> <!-- ul>li{item $}*5 -->
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+    <li>item 4</li>
+    <li>item 5</li>
+</ul>
+
+<h1>Header 1</h1> <!-- h${Header $} -->
+<h2>Header 2</h2>
+<h3>Header 3</h3>
+<h4>Header 4</h4>
+<h5>Header 5</h5>
